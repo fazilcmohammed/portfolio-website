@@ -9,7 +9,7 @@ export default {
       colors: {
         primary: '#000000', // black
         secondary: '#404040', // neutral
-        accent: '#F97316', // orange
+        zinc500: '#71717a', // orange
         background: '#F9FAFB', // light gray for background
         text: '#111827',
         error: '#ef4444' // error
