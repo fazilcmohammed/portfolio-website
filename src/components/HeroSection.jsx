@@ -6,8 +6,8 @@ import { socialIcons } from "../assets/constant";
 const HeroSection = () => {
   return (
     <section className="px-10 md:px-28 my-20">
-      <div className="flex items-end">
-        <div className="w-[50%]">
+      <div className="flex flex-col-reverse md:flex-row items-end gap-10">
+        <div className="md:w-[50%]">
           <p className="text-[40px]">
             Hello I'am <b>Fazil.</b> <br />
             <b>Full Stack </b>
@@ -21,7 +21,7 @@ const HeroSection = () => {
           <div className="flex items-center text-4xl gap-5">
           {
             socialIcons.map((icon, index) => (
-                <div key={index} className="px-4 py-2 border-2 border-black rounded-md mt-8 hover:bg-black hover:text-white duration-300">
+                <div key={index} className="w-16 h-16  border-2 flex items-center justify-center border-black rounded-md mt-8 hover:bg-black hover:text-white duration-300 cursor-pointer">
                     <span className=""><icon.icon className="w-6"/></span>
                 </div>
             ))
@@ -29,7 +29,7 @@ const HeroSection = () => {
           </div>
         </div>
         <div>
-          <img src={heroimg} alt="" className="w-[600px] z-10"/>
+          <img src={heroimg} alt="" className="w-full md:w-[600px] z-10"/>
         </div>
       </div>
     </section>
