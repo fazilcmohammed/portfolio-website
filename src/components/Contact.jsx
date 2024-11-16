@@ -3,8 +3,8 @@ import { socialIcons } from "../assets/constant";
 
 const Contact = () => {
   return (
-    <section className="px-10 md:px-28 my-20">
-      <div className="flex flex-col md:flex-row md:items-center gap-5 md:gap-10">
+    <section className="px-8 md:px-28 my-20">
+      <div className="flex flex-col md:flex-row md:items-center gap-5 md:gap-10" id="contact">
         <div className="flex flex-col gap-3 md:w-[60%]">
           <input
             type="text"
@@ -31,15 +31,14 @@ const Contact = () => {
             <button className=" bg-black text-white rounded-md py-3 px-6 w-full md:  cursor-pointer hover:bg-secondary ease-in-out duration-300">
               Get In Touch
             </button>
-            <div className="flex items-center justify-center  text-4xl gap-5">
+            <div className="flex items-center justify-center  text-4xl gap-5 cursor-pointer">
               {socialIcons.map((icon, index) => (
                 <div
                   key={index}
                   className="w-10 h-10 border-2 border-black rounded-md items-center justify-center flex hover:bg-black hover:text-white duration-300"
                 >
-                  <span className="">
-                    <icon.icon className="w-5" />
-                  </span>
+                  
+                  <a href={icon.link} target="_blank" rel="noopener noreferrer" ><icon.icon className="w-5"/></a>
                 </div>
               ))}
             </div>

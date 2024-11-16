@@ -5,7 +5,7 @@ import { socialIcons } from "../assets/constant";
 
 const HeroSection = () => {
   return (
-    <section className="px-10 md:px-28 my-20">
+    <section className="px-6 md:px-28 my-20">
       <div className="flex flex-col-reverse md:flex-row items-end gap-10">
         <div className="md:w-[50%]">
           <p className="text-[40px]">
@@ -15,14 +15,14 @@ const HeroSection = () => {
               Developer
             </span>{" "}
             <br />
-            Based In <b>India</b>
+            {/* Based In <b>India</b> */}
           </p>
-          <p className="text-zinc500 text-sm my-5">I'm Evren Shah Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to specimen book.</p>
+          <p className="text-zinc500 text-sm my-5">I'm Fazil Mohammed, a passionate Full Stack Developer dedicated to building dynamic and responsive web applications. With expertise in both front-end and back-end technologies, I craft seamless user experiences and efficient, scalable solutions.</p>
           <div className="flex items-center text-4xl gap-5">
           {
             socialIcons.map((icon, index) => (
                 <div key={index} className="w-16 h-16  border-2 flex items-center justify-center border-black rounded-md mt-8 hover:bg-black hover:text-white duration-300 cursor-pointer">
-                    <span className=""><icon.icon className="w-6"/></span>
+                    <a href={icon.link} target="_blank" rel="noopener noreferrer" ><icon.icon className="w-6"/></a>
                 </div>
             ))
           }
