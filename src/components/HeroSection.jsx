@@ -6,7 +6,7 @@ import { socialIcons } from "../assets/constant";
 const HeroSection = () => {
   return (
     <section className="px-6 md:px-28 my-20">
-      <div className="flex flex-col-reverse md:flex-row items-end gap-10">
+      <div className="flex flex-col-reverse md:flex-row items-end gap-10 " id="home">
         <div className="md:w-[50%]">
           <p className="text-[40px]">
             Hello I'am <b>Fazil.</b> <br />
