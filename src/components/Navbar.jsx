@@ -3,7 +3,7 @@ import { LuDownload } from "react-icons/lu";
 import { FiMenu } from "react-icons/fi";
 import { IoClose } from "react-icons/io5";
 import { Link } from "react-scroll";
-import resume from '../assets/Fazil Mohammed Resume.pdf'
+import resume from "../assets/Fazil Mohammed Resume.pdf";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false); // State to track menu toggle
@@ -169,13 +169,13 @@ const Navbar = () => {
 
           {/* Resume Button inside mobile menu */}
           <a
-          href={resume}
-          download
-          className="hidden lg:flex items-center gap-1 bg-black text-white rounded-md py-3 px-6 cursor-pointer hover:bg-secondary ease-in-out duration-300"
-        >
-          <h3>Resume</h3>
-          <LuDownload />
-        </a>
+            href={resume}
+            download
+            className="flex items-center gap-1 bg-black text-white rounded-md py-3 px-6 cursor-pointer hover:bg-secondary ease-in-out duration-300 mt-1"
+          >
+            <h3>Resume</h3>
+            <LuDownload />
+          </a>
         </div>
       )}
     </nav>
