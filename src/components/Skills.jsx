@@ -6,7 +6,7 @@ const Skills = () => {
     <section className='px-6 md:px-28 my-40' id='skills'>
         <div>
             <h1 className='text-[40px] text-center'>My <b>Skills</b></h1>
-            <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 justify-center items-center gap-12 my-20'>
+            <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 justify-center items-center gap-8 md:gap-12 my-20'>
                 {
                     skillIcons.map((icon, index) => (
                         <div key={index} className='flex flex-col items-center justify-center border-black rounded-md border-2 hover:bg-black hover:text-white ease-in-out duration-300 cursor-pointer aspect-square'>
